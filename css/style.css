@@ -1,0 +1,157 @@
+/*Etiquetas*/
+*{
+  margin: 0px;
+  padding-inline-start: 0px;
+  /*Fuentes*/
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+a{
+  text-decoration: none;/*quita la decoración a todas las "a" */
+}
+h1{
+  font-size: 2em; /*fuerza que h1 tenga su tamaño por defecto*/
+  margin-bottom: 15px;/*espacio en la parte inferior fuera del contenido*/
+}
+ul li{
+  list-style: none;
+}
+
+@keyframes girar{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+/*tienen display:flex*/
+.v-center,.h-center,.h-between,.h-around,.column, #navigation-bar, #logo, #slider-big, #slider-small, #container{
+  display: flex;
+}
+/*width 100% + alineado horizontal centrado*/
+#navigation-bar, #slider-big, #slider-small, #container{
+  width: 100%;
+  justify-content: center;
+}
+
+/*alinea de manera vertical*/
+.v-center{
+  align-items: center;
+}
+/*alinean de manera horizontal*/
+.h-center{
+  justify-content: center;
+}
+.h-between{
+  justify-content: space-between;
+}
+.h-around{
+  justify-content: space-around;
+}
+/*contenido en columnas*/
+.column{
+  flex-direction: column;
+}
+
+/*boton blanco*/
+.btn-white{
+  padding: 15px; /*espacio dentro del contenido*/
+  background: white; /*color del boton en blanco*/
+  color: black; /*color de las letras del boton en negro*/
+  font-size: 18px; /*fuente de 18px*/
+  text-shadow: none; /*quita las sombras al texto*/
+  box-shadow: 0px 0px 5px rgb(129, 127, 127); /*quita las sombras al boton*/
+  text-transform: uppercase; /*cambia a mayuscula el texto*/
+  transition: 300ms all; 
+}
+a.btn-white:hover{
+  color: white; /*la letra del boton cambia a blanco al posar el mouse en el boton*/
+  background: #444; /*el fondo del boton cambia a negro al posar el mouse en el boton*/
+}
+
+/*slider celeste*/
+#slider-big, #slider-small{
+  background: #87e0fd;
+  /* FF3.6-15 */
+  background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 47%, #057be0 100%);
+  /* Chrome10-25,Safari5.1-6 */ 
+  background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+  background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%); 
+  /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); 
+}
+
+/*==========NAVIGATION BAR==========*/
+#navigation-bar{
+  height: 120px;
+  border-top: 5px solid #61dafb;
+  border-bottom: 1px solid#ccc;
+}
+  .navigation-bar{
+    width: 94%;
+  }
+    #logo{
+      width: 25%;
+      align-items: center;
+    }
+      #logo img{
+        height: 70px;
+        animation: girar infinite 3s linear;
+      }
+      #brand{
+        font-size: 30px;
+      }
+    #nav{
+      width: 40%;
+    }
+          #nav ul li a{
+            font-size: 18px;
+            color: #444;
+            transition: 300ms all;
+          }
+          #nav ul li a:hover{
+            color: #61dbfb;
+          }
+
+/*==========HEADER==========*/
+
+/*--index.html--*/
+#slider-big{
+  height: 350px;
+}
+    .slider-title{
+      margin: 10px; /*espacio fuera del contenido*/
+      padding: 5px; /*espacio dentro del contenido*/
+      text-align: center; /*centra las letras dentro del contenido*/
+      color: white; /*color blanco a las letras*/
+      text-shadow: 0px 0px 5px #444; /*sobreado a las letras*/
+      /*background-color: crimson;*/
+    }
+/*--blog.html--*/
+#slider-small{
+  height: 160px;
+}
+
+/*==========CONTAINER==========*/
+#container{
+  height: 700px;
+}
+  .container{
+    width: 95%;
+    background-color: springgreen;
+  }
+    #list-container{
+      width: 40%;
+      padding-top: 25px;
+      text-align: center;
+      background-color: teal;
+    }
+    #sidebar{
+      width: 50%;
+      background-color: teal;
+    }
+

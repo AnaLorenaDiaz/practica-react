@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maquetación - </title>
+  <title>React</title>
   <!--CSS3-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <!--==================================================================-->
 <body>
-  <!--Barra de Navegación-->
+  <!--Barra de Navegación (check)-->
   <section id="navigation-bar">
-    <section class="center">
+    <section class="navigation-bar v-center h-between">
 
       <!--Logo-->
       <section id="logo">
-        <img src="assets/images/react.png" alt="app-logo" alt="logotipo">
+        <img src="assets/images/react.png" alt="logotipo" alt="logotipo">
         <span id="brand">
           <strong>Logo</strong>React
         </span>
@@ -24,7 +24,7 @@
 
       <!--Menu de Navegación-->
       <nav id="nav">
-        <ul>
+        <ul class="h-around">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="pages/blog.html">Blog</a></li>
           <li><a href="#">Formulario</a></li>
@@ -36,18 +36,16 @@
     </section>
   </section>
 
-  <!--Cabecera-->
+  <!--Cabecera (check)-->
   <header id="slider-big">
-    <section class="center">
+    <section class="column v-center h-center">
 
-      <!--Titulo-->
-      <section class="titulo">
+      <!--Contenido de Cabecera-->
+      <section class="slider-title">
         <h2>Bienvenido al proyecto resultado del certificado en:</h2>
         <br>
         <h1>Master en Framework de JavaScript</h1>
-      </section>
-      <!--Botón-->
-      <section class="btn">
+        <br>
         <a href="pages/blog.html" class="btn-white">Ir al blog</a>
       </section>
 
@@ -56,26 +54,22 @@
 
   <!--Contenido-->
   <section id="container">
-  <section class="content-center">
+  <section class="container h-between">
 
-    <article id="content">
-      <!--titulo-->
-      <section class="titulo titulo-black">
-        <h2>Últimos Artículos</h2>
-        <br>
-        <!--Lista de articulos-->
-        <ul>
-          <li>dasd</li>
-          <li>dsada</li>
-          <li>sadas</li>
-          <li>sd</li>
-          <li>ds</li>
-          <li>dsd</li>
-          <li>dsd</li>
-          <li>dsf</li>
-        </ul>
-
-      </section>
+    <article id="list-container">
+      <h2>Últimos Artículos</h2>
+      <br>
+      <!--Lista de articulos-->
+      <ul>
+        <li>dasd</li>
+        <li>dsada</li>
+        <li>sadas</li>
+        <li>sd</li>
+        <li>ds</li>
+        <li>dsd</li>
+        <li>dsd</li>
+        <li>dsf</li>
+      </ul>
     </article>
   
     <aside id="sidebar">
