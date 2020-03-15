@@ -1,3 +1,4 @@
+/*Etiquetas*/
 *{
   margin: 0px;
   /*Fuentes*/
@@ -9,19 +10,36 @@
 a {
   text-decoration: none;
 }
-
-/*ID funciones iguales*/
-#navigation-bar, #header {
-  width: 100%;
-  display: flex;
-  justify-content:  center;
+h1{
+  font-size: 2em;
 }
-/*clases compartidas*/
+
+/*Clases*/
+.center, .content-center {
+  display: flex;
+  /*background-color: springgreen;*/
+}
 .center {
   width: 90%;
-  display: flex;
   align-items: center;
-  /*background-color: springgreen;*/
+  justify-content: space-between;
+}
+.content-center {
+  width: 95%;
+  padding-top: 30px;
+  justify-content: space-around;
+}
+.titulo, .btn {
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 5px #444;
+  /*background-color: crimson;*/
+}
+.titulo-black {
+  color: black !important;
+  text-shadow: none;
 }
 .btn-white{
   display: block;
@@ -36,33 +54,57 @@ a {
   text-transform: uppercase;
   transition: 300ms all;
 }
-/*ID + clases compartidas*/
-#header .center .titulo, #header .center .btn{
-  margin: 10px;
-  padding: 5px;
-  text-align: center;
+a.btn-white:hover{
   color: white;
-  text-shadow: 0px 0px 5px #444;
-  /*background-color: crimson;*/
+  background: #444;
 }
-  #header .center .titulo h1{
-    font-size: 2em;
-  }
-  #header .center .btn .btn-white:hover{
-    color: white;
-    background: #444;
-  }
 
-/*---------------------------------------------Navigation Bar------------------------------------------------*/
+/*ID's*/
+#navigation-bar, #slider-big, #slider-small, #container {
+  width: 100%;
+  display: flex;
+  justify-content:  center;
+}
+#slider-big, #slider-small {
+/*Degradado css*/
+background: #87e0fd; 
+/* FF3.6-15 */
+background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 47%, #057be0 100%);
+/* Chrome10-25,Safari5.1-6 */ 
+background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
+background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%); 
+/* IE6-9 fallback on horizontal gradient */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); 
+}
+
+/*ID'S + CLASES*/
+#slider-big .center, #slider-small .center{
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*Animaciones*/
+@keyframes girar{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/*==========NAVIGATION BAR==========*/
+
 #navigation-bar {
   height: 120px;
   border-top: 5px solid #61dafb;
   border-bottom: 1px solid#ccc;
   /*background-color: yellowgreen;*/
 }
-  #navigation-bar .center{
-    justify-content: space-between;
-  }
+  /*#navigation-bar .center {
+    justify-content: space-between !important;
+  }*/
     #logo {
       width: 30%;
       display: flex;
@@ -97,44 +139,39 @@ a {
           #nav ul li a:hover{
             color: #61dbfb;
           }
-/*-----------------------------------------------------Header------------------------------------------------*/
-#header {
+
+/*==========HEADER==========*/
+
+/*-------------index.html---------------*/
+#slider-big {
   height: 350px;
-  /*Degradado css*/
-  background: #87e0fd; 
-  /* FF3.6-15 */
-  background: -moz-radial-gradient(center, ellipse cover,  #87e0fd 0%, #53cbf1 47%, #057be0 100%);
-  /* Chrome10-25,Safari5.1-6 */ 
-  background: -webkit-radial-gradient(center, ellipse cover,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
-  background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%); 
-  /* IE6-9 fallback on horizontal gradient */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ); 
-
 }
-  #header .center{
-    justify-content: center;
-    flex-direction: column;
+/*-------------blog.html---------------*/
+#slider-small {
+  height: 130px;
+}
+
+/*==========CONTENT==========*/
+#container {
+  height: 700px;
+  /*background-color: yellowgreen;*/
+}
+/*#container .content-center{
+  justify-content: space-around !important;
+}*/
+  #content {
+    width: 40%;
+    /*background-color: #4122e18f;*/
+  }
+  #sidebar {
+    width: 50%;
+    padding: 20px;
+    /*background-color: #4169e18f;*/
   }
 
 
 
 
-
-
-
-
-
-
-
-/*animaciones compartidas*/
-@keyframes girar{
-  from{
-    transform: rotate(0deg);
-  }to{
-    transform: rotate(360deg);
-  }
-}
 
 
 
