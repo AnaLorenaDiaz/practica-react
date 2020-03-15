@@ -2,6 +2,7 @@
 *{
   margin: 0px;
   padding-inline-start: 0px;
+  /*border: 1px solid red;*/
   /*Fuentes*/
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,11 +29,11 @@ ul li{
 }
 
 /*tienen display:flex*/
-.v-center,.h-center,.h-between,.h-around,.column, #navigation-bar, #logo, #slider-big, #slider-small, #container{
+.v-center,.h-center,.h-between,.h-around,.column, #navigation-bar, #logo, #slider-big, #slider-small, #container, #sidebar, #footer{
   display: flex;
 }
 /*width 100% + alineado horizontal centrado*/
-#navigation-bar, #slider-big, #slider-small, #container{
+#navigation-bar, #slider-big, #slider-small, #container, #footer{
   width: 100%;
   justify-content: center;
 }
@@ -70,6 +71,34 @@ ul li{
 a.btn-white:hover{
   color: white; /*la letra del boton cambia a blanco al posar el mouse en el boton*/
   background: #444; /*el fondo del boton cambia a negro al posar el mouse en el boton*/
+}
+/*botones oscuro*/
+.btn-black{
+  padding: 10px 20px; /*espacio dentro del contenido*/
+  background: #0B81e1;; /*color del boton en blanco*/
+  color: cyan; /*color de las letras del boton en negro*/
+  font-size: 14px; /*fuente de 18px*/
+  box-shadow: 0px 0px 5px rgb(129, 127, 127); /*quita las sombras al boton*/
+  transition: 300ms all; 
+}
+a.btn-black:hover{
+  color: #444; /*la letra del boton cambia a blanco al posar el mouse en el boton*/
+  background: white; /*el fondo del boton cambia a negro al posar el mouse en el boton*/
+}
+/*boton de confirmación*/
+.btn-success{
+  padding: 10px; /*espacio dentro del contenido*/
+  background: white; /*color del boton en blanco*/
+  color: black; /*color de las letras del boton en negro*/
+  font-size: 14px; /*fuente de 18px*/
+  text-shadow: none; /*quita las sombras al texto*/
+  border: none;
+  box-shadow: 0px 0px 5px rgb(129, 127, 127); /*quita las sombras al boton*/
+  transition: 300ms all; 
+}
+.btn-success:hover{
+  background: #0b81e1; /*color del boton en blanco*/
+  color: cyan; /*color de las letras del boton en negro*/
 }
 
 /*slider celeste*/
@@ -125,7 +154,7 @@ a.btn-white:hover{
 }
     .slider-title{
       margin: 10px; /*espacio fuera del contenido*/
-      padding: 5px; /*espacio dentro del contenido*/
+      padding: 30px; /*espacio dentro del contenido*/
       text-align: center; /*centra las letras dentro del contenido*/
       color: white; /*color blanco a las letras*/
       text-shadow: 0px 0px 5px #444; /*sobreado a las letras*/
@@ -137,21 +166,47 @@ a.btn-white:hover{
 }
 
 /*==========CONTAINER==========*/
+
+/*--index.html--*/
 #container{
-  height: 700px;
+  height: 400px;
 }
   .container{
     width: 95%;
-    background-color: springgreen;
   }
     #list-container{
-      width: 40%;
-      padding-top: 25px;
+      width: 62%;
+      padding: 20px;
       text-align: center;
-      background-color: teal;
     }
     #sidebar{
-      width: 50%;
-      background-color: teal;
+      padding: 20px;
+      flex-direction: column;
+      align-items: center;
     }
+      .sidebar-items{
+        text-align: center;
+        margin: 15px 0px;
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+        .sidebar-items h3{
+          text-transform: uppercase;
+          padding-bottom: 5px;
+          border-bottom: 3px solid #61eafb;
+        }
+        input[type="text"]{
+          width: 100%;
+          height: 26px;
+          border: 1px solid #ccc;
+          padding: 3px;
+          margin-bottom: 20px;
+        }
 
+/*==========FOOTER==========*/
+#footer{
+  height: 100px;
+}
+  .footer{
+    width: 90%;
+  }
