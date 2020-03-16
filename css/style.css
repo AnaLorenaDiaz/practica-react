@@ -33,7 +33,7 @@ ul li{
   display: flex;
 }
 /*width 100% + alineado horizontal centrado*/
-#navigation-bar, #slider-big, #slider-small, #container, #footer{
+#navigation-bar, #slider-big, #slider-small, #container, #list-container, #footer{
   width: 100%;
   justify-content: center;
 }
@@ -179,6 +179,14 @@ a.btn-black:hover{
       padding: 20px;
       text-align: center;
     }
+      .image-wrap {
+        padding: 10px;
+      }
+        .image-wrap img {
+          height: 150px;
+        }
+
+
     #sidebar{
       padding: 20px;
       flex-direction: column;
