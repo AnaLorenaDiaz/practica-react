@@ -1,15 +1,15 @@
-/*window.addEventListener("load", function(){
+window.addEventListener("load", function(){
   
-  var template = document.getElementById("article-items");
-  var articles = document.getElementById("articles");
+  var template = document.getElementById("article-list");
+  var articles = document.getElementById("article");
 
   
-  for(var i=1; i<=4; i++){
+  for(var i=1; i<5; i++){
     var clonado = template.cloneNode(true);
     clonado.removeAttribute("id");
     var h3 = clonado.getElementsByTagName("h3")[0];
     h3.innerHTML = h3.textContent +' '+i;
     articles.appendChild(clonado);
   }
-});*/
+});
 

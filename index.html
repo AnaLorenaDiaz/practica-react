@@ -4,136 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>React</title>
+  <title>React HTML Y CSS</title>
   <!--CSS3-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <!--==================================================================-->
 <body>
-  <!--Barra de Navegación (check)-->
-  <section id="navigation-bar">
-    <section class="navigation-bar v-center h-between">
-
+  <!--Barra de Navegación-->
+  <nav id="nav-bar">
+  
       <!--Logo-->
-      <section id="logo">
-        <img src="assets/images/react.png" alt="logotipo" alt="logotipo">
-        <span id="brand">
-          <strong>Logo</strong>React
+      <section class="logo">
+        <img src="assets/images/react.png" alt="logotipo">
+        <span class="brand">
+          <b>Logo</b>React
         </span>
       </section>
 
       <!--Menu de Navegación-->
-      <nav id="nav">
-        <ul class="h-around">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/blog.html">Blog</a></li>
-          <li><a href="#">Formulario</a></li>
-          <li><a href="#">Página 1</a></li>
-          <li><a href="#">Página 2</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="#">Formulario</a></li>
+        <li><a href="#">Página 1</a></li>
+        <li><a href="#">Página 2</a></li>
+      </ul>
 
-    </section>
-  </section>
+  </nav>
 
-  <!--Cabecera (check)-->
+  <!--Cabecera-->
   <header id="slider-big">
-    <section class="column v-center h-center">
-
-      <!--Contenido de Cabecera-->
-      <section class="slider-title">
-        <h2>Bienvenido al proyecto:</h2>
-        <br>
-        <h1>Master en Framework de JavaScript</h1>
-        <br>
-        <a href="pages/blog.html" class="btn-white">Ir al blog</a>
-      </section>
-
-    </section>
+    <h2>Bienvenido al proyecto:</h2>
+    <br>
+    <h1>Master en Framework de JavaScript</h1>
+    <br>
+    <a href="pages/blog.html" class="btn-header">Ir al blog</a>
   </header>
 
   <!--Contenido-->
   <section id="container">
-  <section class="container h-around">
 
-    <article id="list-container">
-  
+    <section class="container-list">
       <h2>Últimos Artículos</h2>
       <br>
+
       <!--Lista de articulos-->
-      <div id=articles>
-
-        <article id="article-items">
-          <div class="image-wrap">
-            <img src="assets/images/react-images.png" alt="article-items" srcset="">
+      <article id=article>
+        <div id="article-list" class="article-list">
+          <div class="article-img">
+            <img src="assets/images/react-images.png" alt="article-img" >
           </div>
           <div class="article-text">
             <h3>Artículo de prueba</h3>
             <span class="date">Hace 5 min</span>
-            <a href="#">Leer más</a>
+            <a href="pages/article.html">Leer más</a>
           </div>
-        </article>
-        <article id="article-items">
-          <div class="image-wrap">
-            <img src="assets/images/react-images.png" alt="article-items" srcset="">
-          </div>
-          <div class="article-text">
-            <h3>Artículo de prueba</h3>
-            <span class="date">Hace 5 min</span>
-            <a href="#">Leer más</a>
-          </div>
-        </article>
-        <article id="article-items">
-          <div class="image-wrap">
-            <img src="assets/images/react-images.png" alt="article-items" srcset="">
-          </div>
-          <div class="article-text">
-            <h3>Artículo de prueba</h3>
-            <span class="date">Hace 5 min</span>
-            <a href="#">Leer más</a>
-          </div>
-        </article>
-        <article id="article-items">
-          <div class="image-wrap">
-            <img src="assets/images/react-images.png" alt="article-items" srcset="">
-          </div>
-          <div class="article-text">
-            <h3>Artículo de prueba</h3>
-            <span class="date">Hace 5 min</span>
-            <a href="#">Leer más</a>
-          </div>
-        </article>
-
-      </div>
-
-    </article>
+        </div>
+      </article>
+    </section>
  
-    <aside id="sidebar">
+    <aside class="sidebar">
       <section class="sidebar-items">
         <h3>Puedes hacer esto:</h3>
         <br>
-        <a href="#" class="btn-black">Crear artículo</a>
+        <a href="#" class="btn-sidebar">Crear artículo</a>
       </section>
       <section class="sidebar-items">
         <h3>Buscador</h3>
         <br>
         <p>Encuentra el artículo que buscas</p>
         <br>
-        <form action="" method="post">
+        <form >
           <input type="text" name="search">
-          <input type="submit" name="submit" value="Buscar" class="btn-success">
+          <input type="submit" name="submit" value="Buscar" class="btn-sidebar">
         </form>
       </section>
     </aside>
 
   </section>
-  </section>
 
   <!--Pie de Página-->
   <footer id="footer">
-    <section class="footer v-center h-center">
       <p>Hecho por: Ana Díaz &copy; Máster en Frameworks para JavaScript</p>
-    </section>
   </footer>
 
 
