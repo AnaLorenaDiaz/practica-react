@@ -10,7 +10,7 @@
 </head>
 <!--==================================================================-->
 <body>
-
+  
   <!--Barra de Navegación-->
   <nav id="nav-bar">
   
@@ -36,26 +36,34 @@
  <!--Contenido-->
  <section id="container">
 
-  <section class="container-list">
+  <section class="container-list container-list-form">
+    <h1>Formulario</h1>
 
-    <!--Lista de articulos-->
-    <article id=article>
-      <div class="article-html">
-        <div class="article-html-img">
-          <img src="../assets/images/react-images.png" alt="article-img" >
-        </div>
-        <div class="article-html-text">
-          <h1>Artículo de prueba</h1>
-        <span class="date">Hace 5 min</span>
-        </div>
+    <form class="container-form">
+
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre">
       </div>
-      <div class="article-paragraph">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, sequi. Provident aliquam quidem dolor numquam perspiciatis expedita, obcaecati neque aut consectetur placeat quae tempora adipisci ab commodi dicta illo corrupti.</p><br>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo voluptatum ullam nemo, explicabo neque. Repudiandae earum quaerat consequuntur sed optio corrupti, unde, rem nihil tempora officia consectetur aliquam doloremque!</p><br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptatem minima at similique fuga perferendis esse repudiandae consectetur voluptate expedita? Nobis aperiam harum at tempora repellendus reiciendis rem laborum sequi!</p>
+
+      <div class="form-group">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos">
       </div>
-      
-    </article>
+
+      <div class="form-group">
+        <label for="bio">Biografía:</label>
+        <textarea name="bio"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="radio" name="genero" value="masculino">Masculino
+        <input type="radio" name="genero" value="femenino">Femenino
+      </div>
+
+      <input type="submit" value="enviar" class="btn-header">
+
+    </form>
   </section>
 
   <aside class="sidebar">

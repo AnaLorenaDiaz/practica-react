@@ -6,7 +6,9 @@
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   /*border: 1px solid red;*/
 }
-h1{font-size: 2em;}
+h1{
+  font-size: 2em;
+}
 @keyframes girar{
   from{
     transform: rotate(0deg);
@@ -72,7 +74,7 @@ h1{font-size: 2em;}
     text-transform: uppercase;
     transition: 300ms all; 
   }
-  a.btn-header:hover{
+  .btn-header:hover{
     color: white;
     background: #444;
   }
@@ -158,15 +160,15 @@ h1{font-size: 2em;}
         color: #444; /*la letra del boton cambia a blanco al posar el mouse en el boton*/
         background: white; /*el fondo del boton cambia a negro al posar el mouse en el boton*/
       }
-      input[type="text"]{
+      input[type="text"], textarea{
         width: 95%;
-        height: 26px;
+        min-height: 26px;
         border: 1px solid #ccc;
         padding: 3px;
         margin-bottom: 20px;
         transition: 300ms all;
       }
-        input[type="text"]:focus{
+        input[type="text"]:focus, textarea:focus{
           box-shadow: 0px 0px 5px #eee inset;
         }
 
@@ -187,6 +189,33 @@ h1{font-size: 2em;}
   flex-direction: column;
   text-align: justify;
 }
+
+/*formulario.html*/
+.container-list-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-form{
+  width: 90%;
+}
+  .form-group{
+    margin: 15px 0px;
+    text-align: left;
+  }
+    .form-group label{
+      font-size: 17px;
+    }
+    .form-group textarea{
+      width: 95%;
+      min-width: 95%;
+      max-width: 95%;
+      height: 80px;
+      min-height: 80px;
+      max-height: 200px;
+    }
+
 
 /*PIE DE PAGINA*/
 #footer{
