@@ -1,0 +1,205 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /*border: 1px solid red;*/
+}
+h1{font-size: 2em;}
+@keyframes girar{
+  from{
+    transform: rotate(0deg);
+  }to{
+    transform: rotate(360deg);
+  }
+}
+
+/*BARRA DE NAVEGACION*/
+#nav-bar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  border-top: 5px solid #61dbfb;
+  border-bottom: 1px solid#ccc;
+}
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+    .logo img{
+      height: 70px;
+      animation: girar infinite 3s linear;
+    }
+    .brand{
+      font-size: 30px;
+    }
+  .nav-list{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+    .nav-list li a{
+      font-size: 18px;
+      color: #444;
+      transition: 300ms all;
+    }
+    .nav-list li a:hover{
+      color: #61dbfb;
+    }
+
+/*CABECERAS*/
+
+/*index.html*/
+#slider-big{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
+  color: white;
+  text-shadow: 0px 0px 5px #444;
+}
+  .btn-header{
+    padding: 10px 15px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    text-shadow: none;
+    box-shadow: 0px 0px 5px rgb(129, 127, 127);
+    text-transform: uppercase;
+    transition: 300ms all; 
+  }
+  a.btn-header:hover{
+    color: white;
+    background: #444;
+  }
+/*blog.html*/
+#slider-small{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
+  color: white;
+  text-shadow: 0px 0px 5px #444;
+}
+
+/*CONTENIDO*/
+
+/*index.html*/
+#container{
+  display: flex;
+  justify-content: space-around;
+}
+  .container-list{
+    width: 60%;
+    padding: 33px 0px;
+    text-align: center;
+  }
+    .article-list{
+      display: flex;
+      justify-content: right;
+      margin: 20px 0px;
+      border-bottom: 1px solid #eee;
+    }
+      .article-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        .article-img img {
+          height: 100px;
+          width: 200px;
+          overflow: hidden;
+        }
+      .article-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        width: 40%;
+        margin-left: 25px;
+      }
+        .date{
+          color: rgb(145, 141, 141);
+        }
+  .sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+    .sidebar-items{
+      text-align: center;
+      margin: 15px 0px;
+      padding: 20px;
+      background-color: #f7f7f7;
+    }
+      .sidebar-items h3{
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        border-bottom: 3px solid #61eafb;
+      }
+      .btn-sidebar{
+        padding: 5px 15px; /*espacio dentro del contenido*/
+        background: #0B81e1;; /*color del boton en blanco*/
+        color: cyan; /*color de las letras del boton en negro*/
+        font-size: 14px; /*fuente de 18px*/
+        box-shadow: 0px 0px 5px rgb(129, 127, 127); /*quita las sombras al boton*/
+        transition: 300ms all; 
+        border: none;
+      }
+      .btn-sidebar:hover{
+        color: #444; /*la letra del boton cambia a blanco al posar el mouse en el boton*/
+        background: white; /*el fondo del boton cambia a negro al posar el mouse en el boton*/
+      }
+      input[type="text"]{
+        width: 95%;
+        height: 26px;
+        border: 1px solid #ccc;
+        padding: 3px;
+        margin-bottom: 20px;
+        transition: 300ms all;
+      }
+        input[type="text"]:focus{
+          box-shadow: 0px 0px 5px #eee inset;
+        }
+
+/*article.html*/
+.article-html{
+  display: flex;
+  flex-direction: column;
+}
+  .article-html img{
+    width: 70%;
+  }
+  .article-html-text{
+    text-align: left;
+    margin: 20px 0px;
+  }
+.article-paragraph{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+/*PIE DE PAGINA*/
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+
+
+
+
+
