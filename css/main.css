@@ -282,6 +282,9 @@ h1{
   .brand{
     font-size: 20px;
   }
+  .article-html img {
+    width: 100%;
+  }
   .nav-list li a{
     font-size: 12px;
   }
