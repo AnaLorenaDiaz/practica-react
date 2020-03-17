@@ -269,6 +269,9 @@ h1{
       width: 80%;
       padding: 40px 0px;
     }
+    .btn-header{
+      margin: 20px 0px 0px 0px;
+    }
 }
 
 @media(max-width: 425px){
@@ -285,6 +288,7 @@ h1{
   .article-list {
     display: flex;
     flex-direction: column;
+    border:none;
   }
   .article-text {
     width: 80%;
