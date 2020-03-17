@@ -18,7 +18,7 @@ h1{
 }
 
 /*BARRA DE NAVEGACION*/
-#nav-bar{
+#navbar{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -38,7 +38,7 @@ h1{
       font-size: 30px;
     }
   .nav-list{
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
   }
@@ -59,7 +59,8 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 250px;
+  text-align: center;
+  height: 300px;
   background: radial-gradient(ellipse at center,  #87e0fd 0%,#53cbf1 47%,#057be0 100%);
   color: white;
   text-shadow: 0px 0px 5px #444;
@@ -201,7 +202,7 @@ h1{
   width: 90%;
 }
   .form-group{
-    margin: 15px 0px;
+    margin: 10px 0px;
     text-align: left;
   }
     .form-group label{
@@ -222,12 +223,74 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  text-align: center;
+  height: 100px;
   background-color: #f7f7f7;
   color: #444;
 }
 
 
+@media(max-width: 768px){
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-top: 5px solid #61dbfb;
+    border-bottom: 1px solid#ccc;
+  }
+    .logo{
+      margin: 10px 0px;
+    }
+      .logo img{
+        margin-right: 5px;
+        height: 35px;
+        animation: girar infinite 3s linear;
+      }
+      .brand{
+        font-size: 25px;
+      }
+    .nav-list{
+      margin: 10px 0px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+      .nav-list li a{
+        font-size: 16px;
+      }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    .container-list {
+      width: 80%;
+      padding: 40px 0px;
+    }
+}
+
+@media(max-width: 425px){
+  .container-list {
+    width: 85%;
+    padding: 25px 0px;
+}
+  .brand{
+    font-size: 20px;
+  }
+  .nav-list li a{
+    font-size: 12px;
+  }
+  .article-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .article-text {
+    width: 80%;
+    text-align: center;
+  }
+}
 
 
 
